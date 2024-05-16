@@ -22,8 +22,9 @@ img {
 }
 
 .container {
-    max-width: 1290px;
+    max-width: 1320px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* header-------------------------------------------------------------------------------------start */
@@ -61,7 +62,7 @@ header .middle ul a {
 }
 
 header .middle ul a:hover {
-    color: var(--f-clr);
+    color: var(--pink-bg);
 }
 
 header .right {
@@ -120,7 +121,9 @@ section.home .home-content-container a {
 
 section.home .home-content-container a:hover{
     border: 1px solid var(--green-bg);
+    background: var(--green-bg);
     transition: .3s all ease-in;
+    color: var(--m-clr);
 }
 
 section.home .row {
@@ -627,6 +630,8 @@ section.childs .row .right img {
  section.clients {
     cursor: grab;
     padding-top: 140px;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 
@@ -869,10 +874,7 @@ footer .row .middle .footer-links{
 }
 
 footer .row .middle .footer-links a:hover{
-    /* color: var(--pink-bg);
-    transition: .3s ease-in;
-    text-decoration: underline var(--green-bg); */
-    color: var(--f-clr);
+    color: var(--pink-bg);
 }
 
 footer .row .middle .footer-links a{
