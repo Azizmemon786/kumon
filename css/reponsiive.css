@@ -371,7 +371,8 @@
     }
     
     section.location .row .left iframe {
-        max-width: 520px;
+        width: 520px;
+        max-width: 100%;
         min-height: 534px;
         border-radius: 20px;
     }
@@ -1684,8 +1685,10 @@
     
     footer .row .middle-2{
         width: fit-content;
-        display: block;
-        margin:0  auto ;
+        /* display: block;
+        margin:0  auto ; */
+        margin-right: auto;
+        margin-left: 0;
         padding: 0;
     }
     
@@ -1949,12 +1952,16 @@
     section.park .row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
     
     section.park .row .left img {
         border-radius: 260px;
         padding-left: 0px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        justify-content: end;
     }
     
     section.park .row .right {
@@ -2336,6 +2343,7 @@
     
     section.childs .row .right img {
         border-radius: 260px;
+        height: 400px;
     }
     
     /* childs-------------------------------------------------------------------------------------end */
@@ -2753,7 +2761,7 @@
         padding-top: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 10px;
     }
     
     section.home .row img {
@@ -2793,7 +2801,7 @@
     section.choose .row .card {
         padding: 15px;
         border: 1px solid #f05b7162;
-        border-radius: 20px;
+        border-radius: 10px;
         background: var(--m-clr);
     }
     
@@ -2848,6 +2856,9 @@
     section.park .row .left img {
         border-radius: 260px;
         padding-left: 0px;
+        height: 300px;
+        margin-right: auto;
+        margin-left: 0;
     }
     
     section.park .row .right {
@@ -2892,15 +2903,15 @@
     }
     
     section.program .row .card {
-        padding: 20px;
+        padding: 12px;
         border: 1px solid #6dcfae5b;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     
     section.program .row .card .card-img img {
         width: 100%;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     
     section.program .row .card .card-content h2 {
@@ -2946,8 +2957,8 @@
     section.experience .row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-        padding-top: 20px;
+        grid-gap: 10px;
+        padding-top: 40px;
     }
     
     section.experience .row .card {
@@ -2981,7 +2992,7 @@
         background-repeat: repeat;
         background-size: cover;
         padding: 60px 0;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     
     section.community .row h2 {
@@ -3027,7 +3038,7 @@
     
     section.location .row .left iframe {
         width: 100%;
-        min-height: 500px;
+        max-height: 200px !important;
         border-radius: 20px;
     }
     
@@ -3106,7 +3117,7 @@
         grid-template-columns: repeat(2, 1fr);
         padding-top: 30px;
         text-align: left;
-        gap: 30px;
+        gap: 10px;
     }
     
     section.fourstep .row .card{
@@ -3130,16 +3141,22 @@
         text-align: center;
         padding: 35.5px 28.5px;
         border-radius: 100px;
+        margin-right: auto;
+        margin-left: 0px;
     }
     
     section.fourstep .row .card:hover .card-icon{
         box-shadow: 0px 2px 40px 0px var(--pink-bg);
         transition: .5s ease-in-out all;
         background: var(--pink-bg);
+        margin-right: auto;
+        margin-left: 0px;
     }
     
     section.fourstep .row .card .card-icon2{
         padding: 35.5px 26px;
+        margin-right: auto;
+        margin-left: 0px;
     }
     
     section.fourstep .row .card:hover .card-icon2{
@@ -3148,10 +3165,14 @@
     
     section.fourstep .row .card .card-icon3{
         padding: 30px 25.5px;
+        margin-right: auto;
+        margin-left: 0px;
     }
     
     section.fourstep .row .card .card-icon4{
         padding: 35.5px 25px;
+        margin-right: auto;
+        margin-left: 0px;
     }
     
     section.fourstep .row .card .card-icon h2 {
@@ -3234,6 +3255,8 @@
     section.childs .row .right img {
         margin-top: 30px;
         border-radius: 260px;
+        max-height: 300px;
+        object-fit: cover;
     }
     
     /* childs-------------------------------------------------------------------------------------end */
@@ -3286,14 +3309,14 @@
     section.clients .swiper-button-next{
         color: var(--m-clr);
         background: var(--green-bg);    
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         border-radius: 100px;
         cursor: pointer;
         position: absolute;
         top: 50%;
         transform: translateY(70%);
-        right: -5%;
+        right: -4%;
     }
     
     .swiper-button-prev::after{
@@ -3309,12 +3332,12 @@
     .swiper-button-prev{
         color: var(--m-clr);
         background: var(--green-bg);    
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         border-radius: 100px;
         cursor: pointer;
         position: absolute;
-        left: -20px;
+        left: -15px;
         right: 0px;
         bottom: 0;
         top: 50%;

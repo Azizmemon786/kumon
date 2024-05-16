@@ -430,6 +430,7 @@ section.location .row .left {
 
 section.location .row .left iframe {
     max-width: 520px;
+    width: 100%;
     min-height: 534px;
     border-radius: 20px;
 }
