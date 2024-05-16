@@ -27,6 +27,11 @@ img {
     padding: 0 15px;
 }
 
+.ri-menu-line{
+    display: none;
+    font-size: 30px;
+}
+
 /* header-------------------------------------------------------------------------------------start */
 
 .sticky{
