@@ -11,3 +11,15 @@ var swiper = new Swiper(".childSwiper", {
   },
 });
 
+
+// window.addEventListener("scroll", function(){
+
+//   let navbar = document.getElementById("header")
+
+//   if(window.pageYOffset >= 93){
+//     navbar.classList.add('sticky')  
+//   }
+//   else{
+//     navbar.classList.remove('sticky') 
+//   }
+// })

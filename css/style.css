@@ -28,6 +28,12 @@ img {
 
 /* header-------------------------------------------------------------------------------------start */
 
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 header .row {
     display: grid;
     grid-template-columns: 20% 60% 20%;
@@ -73,6 +79,12 @@ header .right a {
     border: 1px solid var(--green-bg);
 }
 
+header .right a:hover{
+    transition: .5s ease-out all;
+    background: var(--pink-bg);
+    border: 1px solid var(--pink-bg);
+}
+
 /* header-------------------------------------------------------------------------------------end */
 /* home-------------------------------------------------------------------------------------start */
 
@@ -104,6 +116,11 @@ section.home .home-content-container a {
     padding: 13.5px 19.5px 13.5px 19.5px;
     border-radius: 100px;
     border: 1px solid var(--pink-bg);
+}
+
+section.home .home-content-container a:hover{
+    border: 1px solid var(--green-bg);
+    transition: .3s all ease-in;
 }
 
 section.home .row {
@@ -154,13 +171,25 @@ section.choose .row .card {
     background: var(--m-clr);
 }
 
-section.choose .row .card .card-icon.green-bg {
+section.choose .row .card:hover{
+    transition: ease-in-out .3s all;
+    box-shadow: 0px 2px 40px 0px #F05B7233;
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+section.choose .row .card:hover .card-icon{
+    transition: ease-in-out .3s all;
+    background: var(--pink-bg);
+}
+
+/* section.choose .row .card .card-icon.green-bg {
     background: var(--green-bg);
 }
 
 section.choose .row .card .card-icon .pink-bg {
     background: var(--pink-bg);
-}
+} */
 
 section.choose .row .card .card-icon {
     display: flex;
@@ -169,6 +198,10 @@ section.choose .row .card .card-icon {
     width: 70px;
     height: 70px;
     border-radius: 100px;
+    background: var(--green-bg);
+}
+
+section.choose .row .card .card-icon:hover{
     background: var(--pink-bg);
 }
 
@@ -390,6 +423,7 @@ section.location .row .left {
 section.location .row .left iframe {
     max-width: 520px;
     min-height: 534px;
+    border-radius: 20px;
 }
 
 section.location .row .right h2 {
@@ -486,17 +520,16 @@ section.fourstep .row .card .card-icon {
 }
 
 section.fourstep .row .card:hover .card-icon{
-    box-shadow: 0px 2px 40px 0px var(--green-bg);
+    box-shadow: 0px 2px 40px 0px var(--pink-bg);
     transition: .5s ease-in-out all;
+    background: var(--pink-bg);
 }
 
 section.fourstep .row .card .card-icon2{
     padding: 35.5px 36px;
-    background: var(--pink-bg);
 }
 
 section.fourstep .row .card:hover .card-icon2{
-    box-shadow: 0px 2px 40px 0px var(--pink-bg);
     transition: .5s ease-in-out all;
 }
 
@@ -504,18 +537,8 @@ section.fourstep .row .card .card-icon3{
     padding: 35.5px;
 }
 
-section.fourstep .row .card:hover .card-icon3{
-    box-shadow: 0px 2px 40px 0px var(--green-bg);
-    transition: .5s ease-in-out all;
-}
-
 section.fourstep .row .card .card-icon4{
     padding: 35.5px 35px;
-}
-
-section.fourstep .row .card:hover .card-icon4{
-    box-shadow: 0px 2px 40px 0px var(--green-bg);
-    transition: .5s ease-in-out all;
 }
 
 section.fourstep .row .card .card-icon h2 {
@@ -759,7 +782,7 @@ section.clients .slide-bottom .btn{
 
 footer {
     margin-top: 140px;
-    background: linear-gradient(180deg, rgba(109, 207, 175, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+    background: linear-gradient(360deg, rgba(109, 207, 175, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
 footer .row {
@@ -846,9 +869,10 @@ footer .row .middle .footer-links{
 }
 
 footer .row .middle .footer-links a:hover{
-    color: var(--pink-bg);
+    /* color: var(--pink-bg);
     transition: .3s ease-in;
-    text-decoration: underline var(--green-bg);
+    text-decoration: underline var(--green-bg); */
+    color: var(--f-clr);
 }
 
 footer .row .middle .footer-links a{
