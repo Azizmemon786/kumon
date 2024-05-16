@@ -7,13 +7,18 @@ var swiper = new Swiper(".childSwiper", {
   },
   breakpoints: {
     // when window width is >= 320px
+
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
   
-    575: {
+    576: {
       slidesPerView: 2,
       spaceBetween: 20
     },
 
-    768: {
+    769: {
       slidesPerView: 3,
       spaceBetween: 20
     },
